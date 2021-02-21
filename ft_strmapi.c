@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/17 13:06:58 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/17 17:02:34 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/02/20 23:56:29 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*str;
 
 	i = 0;
-	if (!(str = malloc(ft_strlen(s + 1 * (sizeof(char))))))
+	if (!(str = malloc(ft_strlen((s) + 1 * (sizeof(char))))))
 		return (0);
 	while (s[i])
 	{
