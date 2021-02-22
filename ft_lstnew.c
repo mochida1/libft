@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 11:00:59 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/21 16:48:43 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/02/22 14:19:23 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list	*ft_lstnew(void *content)
 		return (0);
 	if (content == NULL)
 		(*fresh).content = NULL;
-	fresh -> content = content;
+	fresh->content = content;
 	(*fresh).next = NULL;
 	return (fresh);
 }

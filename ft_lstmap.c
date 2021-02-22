@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/22 00:03:52 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/22 14:10:24 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/02/22 14:18:45 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		ft_lstclear(&tmp, del);
 		return (NULL);
 	}
-	while (lst->next) {
+	while (lst->next)
+	{
 		lst = lst->next;
 		tmplast->next = f(lst);
 		if (tmplast->next == NULL)
