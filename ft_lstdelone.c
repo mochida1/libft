@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 18:07:37 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/21 18:20:27 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/02/22 13:27:24 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (del != NULL && alst != NULL)
+	if (del != NULL && lst != NULL)
 	{
 		del((*lst).content);
 		free(lst);
