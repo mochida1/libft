@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 22:16:30 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/22 13:31:53 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/02/22 14:30:55 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,9 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (lst == NULL)
 		return ;
-	while (lst)
+	while (lst != NULL)
 	{
 		f(lst->content);
-		if (lst->next)
-			lst = lst->next;
+		lst = lst->next;
 	}
 }
