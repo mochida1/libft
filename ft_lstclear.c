@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 19:18:58 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/22 13:31:34 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/02/22 14:42:39 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	temp = *lst;
 	if (temp == NULL)
 		return ;
-	while (temp)
+	while (temp != NULL)
 	{
 		temp->next = (*lst)->next;
 		del((*lst)->content);
-		free(lst);
-		lst = NULL;
+		free(*lst);
 		temp = (*temp).next;
 	}
+	*lst = NULL;
 }
