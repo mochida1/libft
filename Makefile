@@ -6,7 +6,7 @@
 #    By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 12:44:01 by hmochida          #+#    #+#              #
-#    Updated: 2021/02/21 17:42:22 by hmochida         ###   ########.fr        #
+#    Updated: 2021/02/22 02:12:08 by hmochida         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,10 +47,10 @@ bonus: $(BONUS_OBJ)
 	ar -rcs $(NAME) $(BONUS_OBJ)
 
 clean:
-	$(RM) $(OBJ)$(BONUS_OBJ)
+	$(RM) $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) $(BONUS_OBJ)
 
 re: fclean all
 
