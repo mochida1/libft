@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: hmochida <hmochida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/08 13:41:24 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/12 18:24:53 by hmochida         ###   ########.fr       */
+/*   Updated: 2022/10/23 14:54:27 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		return (dst);
 	i = 0;
 	d = dst;
-	s = (unsigned char*)src;
+	s = (unsigned char *)src;
 	while (i < n)
 	{
 		*d = *s;

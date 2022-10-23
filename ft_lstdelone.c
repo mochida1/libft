@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: hmochida <hmochida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 18:07:37 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/22 13:27:24 by hmochida         ###   ########.fr       */
+/*   Updated: 2022/10/23 14:59:53 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,4 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 		free(lst);
 		lst = 0;
 	}
-	return (void)(0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: hmochida <hmochida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 11:00:59 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/22 14:19:23 by hmochida         ###   ########.fr       */
+/*   Updated: 2022/10/23 14:52:03 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *fresh;
+	t_list	*fresh;
 
-	if (!(fresh = malloc(sizeof(t_list))))
+	fresh = malloc(sizeof(t_list));
+	if (!fresh)
 		return (0);
 	if (content == NULL)
 		(*fresh).content = NULL;
