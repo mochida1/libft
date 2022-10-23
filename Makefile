@@ -12,7 +12,7 @@
 
 NAME=libft.a
 
-CC=gcc
+CC=clang
 
 CFLAGS=-Wall -Wextra -Werror
 

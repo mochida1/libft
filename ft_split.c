@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/17 19:23:47 by hmochida          #+#    #+#             */
-/*   Updated: 2022/10/23 14:50:31 by hmochida         ###   ########.fr       */
+/*   Updated: 2022/10/23 15:27:17 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,7 @@
 */
 char	**ft_split(char const *s, char c)
 {
+	(void) c;
+	(void) s;
 	return (NULL);
 }
