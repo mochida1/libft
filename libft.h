@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 18:04:22 by hmochida          #+#    #+#             */
-/*   Updated: 2022/10/23 14:42:50 by hmochida         ###   ########.fr       */
+/*   Updated: 2022/10/23 16:39:33 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ char			*ft_strdup(const char *s1);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int				ft_strlen(const char *s);
+int				ft_strcmp(char *str1, char *str2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strnstr(const char *haystack, const char *needle,
 					size_t len);
