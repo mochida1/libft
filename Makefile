@@ -6,7 +6,7 @@
 #    By: hmochida <hmochida@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/12 12:44:01 by hmochida          #+#    #+#              #
-#    Updated: 2022/10/23 16:40:09 by hmochida         ###   ########.fr        #
+#    Updated: 2022/10/23 17:26:26 by hmochida         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME=libft.a
 
 CC=clang
 
-CFLAGS=-Wall -Wextra -Werror
+CFLAGS=-Wall -Wextra -Werror -ggdb
 
 RM=rm -f
 
